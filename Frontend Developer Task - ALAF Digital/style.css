@@ -1,0 +1,632 @@
+@font-face {
+    font-family: gotham;
+    src: url(./ASSETS/Gotham-Font/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: gotham_bold;
+    src: url(./ASSETS/Gotham-Font/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: gotham_lighter;
+    src: url(./ASSETS/Gotham-Font/Gotham-XLight.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.h3-b span,
+.h3-w span {
+    font-family: gotham_lighter;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h3-b,
+.h3-w {
+    color: #161616;
+    font-family: gotham_bold;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.h3-w {
+    color: #ffffff !important;
+}
+
+.sec-full {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.main {
+    background-color: #E2E2E2;
+    height: 80vh;
+    width: 100%;
+
+}
+
+/* navbar CSS */
+
+
+.main nav {
+    height: 9vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.nav_items {
+    text-align: center;
+    display: flex;
+    font-size: 17px;
+    gap: 16px;
+    font-family: gotham;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+.nav_items a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.help_guide {
+    font-weight: bolder;
+    font-family: gotham_bold;
+}
+
+.border_box a {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid black;
+    padding-left: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.border_box:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2),
+        0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact_icon img {
+    height: 20px;
+}
+
+.drop_box select {
+    font-family: gotham_bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav_button button {
+    margin-left: 2px;
+    padding: 4px 8px;
+    font-size: 15px;
+    color: white;
+    background: #2727FF;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    outline: none;
+    left: 0px;
+    position: relative;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+    width: 120px;
+    height: 40px;
+}
+
+button:hover {
+    width: 140px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2),
+        0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.line_icon img {
+    height: 5vh;
+}
+
+
+/* main section CSS (section one) */
+
+.section_1 {
+    display: flex;
+    height: 71vh;
+    gap: -10px;
+
+}
+
+.main_section {
+    width: 100%;
+    background-image: url(./ASSETS/images/main\ car.png);
+    background-position: 600px 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+.text-main {
+    flex-direction: column;
+    font-family: gotham_bold;
+    margin-left: 130px;
+    margin-top: 150px;
+    font-weight: 900;
+    font-size: 39px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-main :nth-child(4) {
+    padding-top: 2px;
+    font-size: 7px;
+    font-family: gotham_lighter;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.store_buttons {
+    width: 300px;
+    display: flex;
+    gap: 7px;
+    margin-top: 17px;
+}
+
+.store {
+
+    background-color: #ffffff;
+    height: 45px;
+    width: 150px;
+    border-radius: 4px;
+}
+
+.store img {
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.store_button {
+    display: flex;
+    gap: 5px;
+}
+
+.store_text {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-family: gotham_lighter;
+}
+
+.store_text :nth-child(2) {
+    font-size: 14px;
+    font-family: gotham_bold;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.search_box {
+    top: -135px;
+    background-color: #ffffff;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    border-radius: 5px;
+    margin-left: 10vw;
+    height: 7vh;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+#searchbox {
+    height: 80%;
+    align-items: center;
+    margin: 1px 2px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #F9F9F9;
+    font-size: 17px;
+    font-family: gotham;
+    padding-left: 4px;
+    width: 70%;
+    color: #9E9E9E;
+    transition: all 0.1s ease-in-out;
+    font-weight: 100;
+}
+
+#searchbox:focus {
+    box-shadow: 0.1px 0.2px 0.8px black;
+    border: 1px solid #9E9E9E;
+    border-radius: 2px;
+}
+
+.search_box button {
+    display: flex;
+    gap: 3.5px;
+    justify-content: center;
+    height: 80%;
+    background-color: #2727FF;
+    color: #ffffff;
+    font-size: 16px;
+    align-items: center;
+    width: 12%;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search_box button:hover {
+    box-shadow: 0px 1px 3px black;
+}
+
+.search_box .traditional_search {
+    font-family: gotham;
+    font-size: 14px;
+    width: 15%;
+    background-color: #F4F4F4;
+    color: #676767;
+    display: flex;
+    gap: 20px;
+    border-radius: 3px;
+}
+
+
+
+/* services section css */
+.services-sec {
+    background-color: #FAFAFA;
+}
+
+.ser-icon-inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 130px;
+    font-family: gotham;
+}
+
+.ser-icon-box {
+    text-align: center;
+
+}
+
+.ser-icon-box .box-img>img {
+    height: 75px;
+    width: 80px;
+    max-width: 60px;
+}
+
+.ser-cont .head {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+/* feature section css */
+
+.feature-sec {
+    background-image: url(/ASSETS/images/Frame.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 68vh;
+}
+
+.feature-text {
+    margin-left: 80px;
+    margin-top: 180px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #ffffff;
+    font-family: gotham;
+}
+
+.feature-main {
+    display: flex;
+    gap: 255px;
+}
+
+.feature-box {
+    display: flex;
+    gap: 8px;
+}
+
+.feature-box-text div {
+    font-family: gotham_bold;
+}
+
+.feature-box-text span {
+    font-family: gotham;
+    font-size: small;
+    font-weight: 100;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.line-img img {
+    margin: 0;
+    padding: 0;
+    width: 420px;
+
+}
+
+
+/* review section CSS */
+
+.reviews-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-reviews {
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    align-items: center;
+}
+
+.reviews-button button {
+    margin-left: 2px;
+    padding: 4px 8px;
+    font-size: 15px;
+    color: white;
+    background: #2727FF;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    outline: none;
+    left: 0px;
+    position: relative;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    height: 40px;
+}
+
+.reviews-container {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.box-row {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+
+}
+
+.reviews-box {
+    cursor: pointer;
+    font-family: gotham_bold;
+    color: #ffffff;
+    opacity: 0.99;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.robert-fox {
+    width: 580px;
+    background-image: url(./ASSETS/images/robert\ fox\ bg.png);
+
+}
+
+.cameron {
+    width: 461px;
+    background-image: url(./ASSETS/images/cameroun\ bg.png);
+
+}
+
+.jenny-wilson {
+
+    width: 461px;
+    background-image: url(./ASSETS/images/cameroun\ bg.png);
+}
+
+.tenner-stafford {
+    width: 580px;
+    background-image: url(./ASSETS/images/Rectangle\ 6748\ \(3\).png);
+}
+
+.reviews-content {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding-top: 175px;
+    padding-left: 25px;
+}
+
+.light-text {
+    padding-top: 10px;
+    font-family: gotham_lighter;
+}
+
+/* offer section CSS */
+
+.sec-offer {
+    margin-bottom: -150px;
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./ASSETS/images/section\ offers\ main\ img.png);
+}
+
+.offer-button {
+    color: #FFF;
+    background-color: transparent;
+    font-family: "Gotham_Bold";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    display: flex;
+    width: 15vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.view-offer{
+    padding-left: 270px;
+    padding-top: 240px;   
+}
+
+.offer-button:hover{
+    box-shadow: 0px 2px 2px black;
+}
+.black-shadow{
+    
+    height: 58.9vh;
+    background-position: 150px 13px;   
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./ASSETS/images/black\ shadow.png);
+}
+
+/* guides and faqs section CSS...*/
+
+.sec-guides {
+    background-color: black;
+    /* margin-top: 0; */
+}
+.head-guides{
+    text-align: center;
+    padding-top:100px ;
+}
+.content-guides{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container {
+    position: relative;
+    width: 85%;
+    overflow: hidden;
+}
+
+.slider {
+    
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: gotham_bold;  
+    color: #000000;
+    margin-left: 20px;
+    min-width: 25%; 
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(25, 20, 20);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: -15px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.slide-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    padding-top: 199px;
+}
+
+/* list of dealeres section CSS.... */
+
+.sec-dealers-head{
+    text-align: center;
+}
+.dealers-list{
+    gap: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.line img{
+    height: 120px;
+}
+
+.dealers-button{
+    margin-top: 10vh;    
+    text-align: center;
+}
+
+.dealers-button button{
+    cursor: pointer;
+    font-size: 10px;
+    width: 13vw;
+    font-family: gotham_bold;
+    color: #ffffff;
+    background-color: #2727FF;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 6vh;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+}
